@@ -47,3 +47,11 @@ gsap.registerPlugin(ScrollTrigger);
             stagger: .6
 
         })
+
+
+const toggleHamburger = document.getElementsByClassName('toggle-hamburger')[0]
+const navbarLinks = document.getElementsByClassName('nav-links')[0]
+
+toggleHamburger.addEventListener('click', () =>{
+    navbarLinks.classList.toggle('active')
+})

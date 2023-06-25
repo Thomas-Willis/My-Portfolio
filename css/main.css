@@ -1,7 +1,11 @@
 body {
   height: 100vh;
   margin: 0;
-  /*font-family: ; add a global font to the website may need to import , for a fallback font*/
+  /*font-family: ; add a global font to the website may need to import (, for a fallback font)*/
+}
+
+img {
+  width: 100%;
 }
 
 ul {
@@ -10,39 +14,104 @@ ul {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
+li {
+  list-style: none;
 }
 
 .nav-container {
-  background: rgba(255, 255, 255, 0.8) a;
-  background-color: white;
+  position: relative;
+  height: auto;
+}
+.nav-container .social-header {
+  position: absolute;
+  display: flex;
+  right: 7em;
+}
+.nav-container .social-header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 4em;
+}
+.nav-container .social-header ul img {
+  width: 20px;
+}
+
+.logo {
+  text-decoration: none;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2em;
 }
 header .logo {
   color: #005eff;
   font-weight: bold;
   font-size: 20px;
+  text-align: none;
 }
 header ul {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 header ul a {
+  text-decoration: none;
   display: block;
   padding: 0 1em;
   color: black;
 }
 
-.social-header, .hero-design {
+@media only screen and (max-width: 1049px) {
+  .toggle-hamburger {
+    position: absolute;
+    right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .toggle-hamburger .bar {
+    height: 4px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: black;
+  }
+  .nav-links {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    margin-bottom: -20px;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1em;
+  }
+  nav ul a {
+    padding: 0.3em;
+  }
+  li:hover {
+    background-color: #f8f8f8;
+  }
+  .nav-links.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.hero-design {
   display: none;
 }
 
@@ -84,27 +153,6 @@ section {
   text-align: center;
 }
 
-/*
-.featured{
-    position: relative;
-
-    // this and the next line off css creates an interesting circle looking feature without the use of any html elements look at changing this or modigying it so that it is relevent
-
-    //potentially add multiple of these things throught the site to add some things
-}
-
-.featured::before{
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #E5D5FA;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-*/
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
@@ -210,6 +258,9 @@ section {
     }
 */
 @media only screen and (min-width: 1050px) {
+  .toggle-hamburger {
+    display: none;
+  }
   .hero {
     height: 90vh;
     background: #f8f8f8;
@@ -218,11 +269,6 @@ section {
     display: grid;
     grid-template-columns: 66% auto;
     background: unset;
-    /*
-    header{
-        background: blue;
-    }
-    */
   }
   header {
     padding: 2em 2em 2em 4em;
@@ -232,18 +278,6 @@ section {
   }
   section {
     padding: 4em;
-  }
-  .social-header {
-    display: block;
-  }
-  .social-header ul {
-    display: flex;
-    justify-content: space-between;
-    width: 7em;
-    float: right;
-  }
-  .social-header ul img {
-    width: 20px;
   }
   .hero {
     display: grid;
