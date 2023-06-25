@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- add a hamburger menu to the navbar if i end up extending it more on mobile-->
+    
     <!-- could make the navbar partially sticky -->
     <div class="nav-container">
         <header>
@@ -30,8 +30,9 @@
             </a>
             <div class="social-header">
                 <ul>
-                    <li><a href="https://github.com/Thomas-Willis" target="_blank"><img src="images/Github-icon.svg" alt="Github icon"></a></li>
-                    <li><a href="#" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon"></a></li>
+                    <li><a href="https://github.com/Thomas-Willis" target="_blank"><img src="images/Github-icon.svg" class='svg-icon' alt="Github icon"></a></li>
+                    <li><a href="#" target="_blank"><img src="images/linkedin.svg" class='svg-icon' alt="linkedin icon"></a></li>
+                    <li><img src="images/moon.png" alt="icon of the moon" id="moon-icon"></li>
                 </ul>
             </div>
         </header>
@@ -47,7 +48,7 @@
             </h1>
             <div class="meet stagger1">
                 <span>
-                    <img src="images/down-chevron.svg" alt="Down chevron" class="down-animation hero-director stagger1">
+                    <img src="images/down-chevron.svg" alt="Down chevron" class="svg-icon down-animation hero-director stagger1">
                 </span>
                 <p>Learn more about my work</p>
             </div>
@@ -94,7 +95,7 @@
                 </li>
                 <li class="transition2">
                     <div class="icon-container three">
-                        <img src="./images/Javascript-logo.jpg" alt="JavaScript logo">
+                        <img src="./images/JavaScript-logo-NoBG-removebg-preview.png" alt="JavaScript logo">
                     </div>
                     <p class="skill-title">JavaScript</p>
                     <p class="featured-desc skill-desc">This will give a brief outline of my JavaScript skills and understanding</p>
@@ -165,6 +166,7 @@
     <!-- cdn to import on scroll animations from gsap-->
 
     <script src="./script/animations.js"></script>
+    <script src="./script/colour-theme.js"></script>
     
 </body>
 </html>
