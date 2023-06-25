@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- add a hamburger menu to the navbar if i end up extending it more on mobile-->
+    <!-- could make the navbar partially sticky -->
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="logo">Tom</a>
+
+            <nav>
+                <ul>
+                    <li><a href="#Featured">Featured</a></li>
+                    <li><a href="#MySkills">My Skills</a></li>
+                    <li><a href="#MyWork">My Work</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="social-header">
+            <ul>
+                <li><a href="https://github.com/Thomas-Willis" target="_blank"><img src="images/Github-icon.svg" alt="Github icon"></a></li>
+                <li><a href="#" target="_blank"><img src="images/linkedin.svg" alt="linkedin icon"></a></li>
+                <li><a href="#"><img src="" alt=""></a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <div class="hero">
+        <div class="content">
+            <h1 class="stagger1">Hi, Im 
+                <span class="highlighted-color">Thomas Willis</span> 
+                <br>
+                a 
+                <span class="highlighted-color">Frontend developer</span>
+            </h1>
+            <div class="meet stagger1">
+                <span>
+                    <img src="images/down-chevron.svg" alt="Down chevron" class="down-animation hero-director stagger1">
+                </span>
+                <p>Learn more about my work</p>
+            </div>
+        </div>
+        <img class='hero-design' src="images/Placeholder-img.jpg" alt="placeholder img">
+        <!-- add the main feature image or svg under a class='hero-design'
+        this feature could be animated if it is a more artistic style, although if it it jsut a portrait image it can just have a onLoad effect-->
+        <!-- this will probably be an interesting looking image-->
+    </div>
+
+
+    <section class="featured" id="Featured">
+        <div class="left">
+            <div class="inner transition2">
+                <p class="subtitle">Featured project</p>
+                <a href="#" class="featured-title">Sushi restaurant menu</a>
+
+                <p class="featured-desc">description of the sushi website project that i have build using a guide</p>
+            </div>
+        </div>
+        <!--image of the completed sushi website project
+        this could be put into a carosel of multiple images-->
+        <img class='right transition2' src="images/Placeholder-img.jpg" alt="placeholder img">
+    </section>
+
+<!-- skills put into this section should be able to be reinforced with projects that are also on the portfolio to provide evidence of this-->
+<!-- could simplify the layout by displaying the icons for each skill and haing a singular card that changes displayed skills when hovering over different icons-->
+    <section class="skills" id="MySkills">
+        <div class="skills-container">
+            <ul>
+                <li class="transition2">
+                    <div class="icon-container one">
+                        <img src="./images/html5-logo.png" alt="Html5 logo">
+                    </div>
+                    <p class="skill-title">Html5</p>
+                    <p class="featured-desc skill-desc">This will give a brief outline of my html skills and understanding</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container two">
+                        <img src="./images/css3-logo.png" alt="Css3 logo">
+                    </div>
+                    <p class="skill-title">Css</p>
+                    <p class="featured-desc skill-desc">This will give a brief outline of my css skills and understanding</p>
+                </li>
+                <li class="transition2">
+                    <div class="icon-container three">
+                        <img src="./images/Javascript-logo.jpg" alt="JavaScript logo">
+                    </div>
+                    <p class="skill-title">JavaScript</p>
+                    <p class="featured-desc skill-desc">This will give a brief outline of my JavaScript skills and understanding</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+<!-- add icons of the software used to build each project-->
+<!-- add buttons with the link to github repository of the website-->
+    <section class="portfolio" id="MyWork">
+
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">project one title</p>
+                    <p class="featured-title">link to the project</p>
+                    <p class="featured-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <a href="#"><img src="images/Placeholder-img.jpg" alt="placeholder img"> </a>
+        </div>
+
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">project two title</p>
+                    <p class="featured-title">link to the project</p>
+                    <p class="featured-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <a href="#"><img src="images/Placeholder-img.jpg" alt="palceholder img"> </a>
+        </div>
+
+
+    </section>
+
+    <section class="about-me" id="AboutMe">
+        <div class="about-me-container transition3">
+            <div>
+                <img src="images/Placeholder-img.jpg" alt="placeholder img">
+            </div>
+            <div class="about-me-right">
+                <h1 class="about-me-heading">
+                    About Me
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <!-- add a button with a link to my cv and add links to some socials-->
+    </section>
+    <!-- need to add @media queries to this to modify the content when it is over a certain size
+    the aim being to add the image and text into a grid so they are next to eachother-->
+
+
+
+    <!-- Need another section with a method to contact me, could be integrated into the about me section-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- cdn for the import of gsap animations-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- cdn to import on scroll animations from gsap-->
+
+    <script src="./script/animations.js"></script>
+    
+</body>
+</html>
