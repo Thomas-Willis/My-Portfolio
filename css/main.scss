@@ -4,7 +4,7 @@
     --primary-color: white;
     --secondary-color: #f7f7f7;
     --text-color: black;
-    --text-secondary: grey;
+    --text-secondary: rgb(30, 30, 30);
     --highlighted-color: #005eff; 
     --background-feature: #77a9ff;
 }
@@ -109,6 +109,43 @@ header{
     padding: 0 16px;
 }
 
+.centered-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.portfolio-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 3em;
+    transition: background-color 0.4s ease-in;
+    img{
+        width: 20px;
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 10px;
+    }
+    
+}
+
+.portfolio-button:hover{
+    background-color: var(--background-feature);
+}
+
+@media only screen and (max-width: 799px){
+    .portfolio-button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
 
 
 @media only screen and (max-width: 1049px) {
@@ -209,6 +246,14 @@ header{
 section{
     padding: 4em 2em;
     text-align: center;
+}
+
+@media only screen and (max-width:450px){
+    .responsive-wrap{
+        width: 120px;
+        height: auto;
+        white-space: pre-wrap;
+    }
 }
 
 .subtitle{
@@ -335,12 +380,37 @@ section{
         margin-left: 2em;
     }
 
+    .about-me-container{
+        display: flex;
+        align-items: center;
+    }
+    
+    .about-me-left{
+        flex:0 0 auto;
+        margin-right: 1em;
+
+        img{
+            min-width: 400px;
+            min-height: 400px;
+        }
+    }
+
+    
+    
+    .about-me-right{
+        flex:1 1 auto;
+        padding-right: 2em;
+        padding-left: 4em;
+    }
+
 }
 
 .about-me{
     background: var(--secondary-color);
-    color: var(--text-color)
+    color: var(--text-color);
 }
+
+
 
 @media only screen and (min-width: 1050px){
     .toggle-hamburger{
@@ -399,6 +469,11 @@ section{
     .portfolio img{
         float: right;
         max-width: 500px;
+    }
+
+    .about-me-left{
+        max-width: 500px;
+        float:left;
     }
 }
 
