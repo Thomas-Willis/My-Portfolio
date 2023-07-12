@@ -1,22 +1,25 @@
-const sushiButton = document.getElementById("sushi-button")
+const sushiButtons = document.querySelectorAll("#sushi-button-1, #sushi-button-2");
 
-sushiButton.addEventListener("click", function(){
-    window.open("https://github.com/Thomas-Willis/Sushi", "_blank");
+sushiButtons.forEach(function(button){
+    button.addEventListener("click", function(){
+        window.open("https://github.com/Thomas-Willis/Sushi", "_blank");
+    });
 });
 
-const todoButton = document.getElementById("todo-button")
+
+const todoButton = document.getElementById("todo-button");
 
 todoButton.addEventListener("click", function(){
     window.open("https://github.com/Thomas-Willis/react-todo-list", "_blank");
 });
 
-const movieButton = document.getElementById("movie-button")
+const movieButton = document.getElementById("movie-button");
 
 movieButton.addEventListener("click", function(){
     window.open("https://github.com/Thomas-Willis/react-movie-search-application", "_blank");
 });
 
-const cameraButton = document.getElementById("camera-button")
+const cameraButton = document.getElementById("camera-button");
 
 cameraButton.addEventListener("click", function(){
     window.open("https://www.figma.com/file/Eme3vl0KJpFru3otLb9Tqv/Camera-Assignment-(final-version)?type=design&node-id=0%3A1&mode=design&t=B03b78oEq8rpzBxA-1", "_blank");
