@@ -134,8 +134,27 @@ header{
     
 }
 
+.about-me-button-container{
+    display: flex;
+    justify-content: center;
+    button{
+        margin: 0 10px;
+    }
+}
+
+.about-me-container{
+    img{
+        border-radius: 1em;
+    }
+}
+
 .portfolio-button:hover{
     background-color: var(--background-feature);
+}
+
+.figma-icon{
+    border-radius: 0px !important;
+    width: 16px !important; 
 }
 
 @media only screen and (max-width: 799px){
@@ -261,7 +280,7 @@ section{
     font-weight: bold;
     color: var(--highlighted-color);
     letter-spacing: .2em;
-    font-size: .85em;
+    font-size: 1.25em;
 }
 .featured{
     background: var(--secondary-color);
@@ -309,7 +328,18 @@ section{
         &.three{
             width: 80px;
         }
-        
+
+        &.four{
+            width: 100px;
+        }
+
+        &.five{
+            width: 120px;
+        }
+
+        &.six{
+            width: 90px;
+        } 
     }
 
     .skill-title{
@@ -368,7 +398,7 @@ section{
 
     .skills-container ul {
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         grid-gap: 1em;
     }
 
@@ -383,6 +413,9 @@ section{
     .about-me-container{
         display: flex;
         align-items: center;
+        img{
+            border-radius: 1em;
+        }
     }
     
     .about-me-left{
@@ -390,17 +423,26 @@ section{
         margin-right: 1em;
 
         img{
-            min-width: 400px;
-            min-height: 400px;
+            width: 400px;
+            height: 300px;
+            object-fit: contain;
+            border-radius: 1em;
         }
     }
 
     
     
+    
     .about-me-right{
         flex:1 1 auto;
         padding-right: 2em;
-        padding-left: 4em;
+        padding-left: 2em;
+    }
+
+    .about-me-button-container{
+        button{
+            min-width: 125px;
+        }
     }
 
 }
@@ -427,6 +469,12 @@ section{
         
     }
 
+    .skills-container ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
+
     header{
         padding: 2em 2em 2em 4em;
     }
@@ -440,14 +488,16 @@ section{
     
     .hero{
         display: grid;
-        grid-template-columns: 66% auto;
+        
         background: var(--secondary-color);
         padding: 0;
+        
 
         .content{
             background: var(--secondary-color);
             padding: 6em 8em 6em 4em;
             text-align: left;
+            margin-left: 16em;
 
             h1{
                 font-size: 3em;
@@ -474,6 +524,16 @@ section{
     .about-me-left{
         max-width: 500px;
         float:left;
+    }
+
+    .about-me-button-container{
+        button{
+            margin: 0 20px;
+        }
+    }
+
+    .about-me-right{
+        padding-left: 4em;
     }
 }
 
